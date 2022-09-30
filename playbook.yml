@@ -1,0 +1,7 @@
+- hosts: localhost
+  become: true
+  pre_tasks:
+    - name: Updating repositories
+      dnf:
+        name: "*"
+        state: latest
