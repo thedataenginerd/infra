@@ -5,3 +5,27 @@
       dnf:
         name: "*"
         state: latest
+      tags: ['dev']
+
+  tasks:
+    - name: Installing fonts
+      dnf:
+        name:
+          - jetbrains-mono-fonts
+          - rsms-inter-fonts
+        state: latest
+      tags: ['dev']
+
+    - name: Installing development tools
+      dnf:
+        name:
+          - fzf
+          - gcc-c++
+          - git
+          - neovim
+          - starship
+          - stow
+          - tmux
+          - zola
+        state: latest
+      tags: ['dev']
