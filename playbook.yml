@@ -23,6 +23,7 @@
           - gcc-c++
           - git
           - neovim
+          - npm
           - starship
           - stow
           - tmux
