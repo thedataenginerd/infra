@@ -49,4 +49,9 @@ vim.keymap.set("n", "<leader>l", "<cmd>wincmd l<cr>")
 -- Plugins
 require('packer').startup(function(use)
     use { "wbthomason/packer.nvim" }
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = function() require("nvim-treesitter.install").update({ with_sync = true }) end,
+        config = function() require("pconf.treesitter") end,
+    }
 end)
