@@ -11,8 +11,7 @@
     - name: Installing fonts
       dnf:
         name:
-          - jetbrains-mono-fonts
-          - rsms-inter-fonts
+          - ibm-plex-fonts-all
         state: latest
       tags: ['dev']
 
