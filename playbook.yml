@@ -24,9 +24,11 @@
           - neovim
           - npm
           - pipenv
+          - ripgrep
           - starship
           - stow
           - tmux
+          - trash-cli
           - zola
         state: latest
       tags: ['dev']
