@@ -3,7 +3,7 @@
 # nav--Start (or attach to) a tmux session in a directory selected via fzf.
 # Used for quickly navigating between specified directories.
 
-target=$(find ~ ~/Documents ~/Playground ~/Workspace -mindepth 1 -maxdepth 1 -type d | fzf)
+target=$(find ~ ~/Documents ~/Playground -mindepth 1 -maxdepth 1 -type d | fzf)
 
 if [ -z "$target" ] ; then
     exit 0
